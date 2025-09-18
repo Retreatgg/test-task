@@ -1,0 +1,31 @@
+spring:
+  datasource:
+    url: jdbc:h2:file:./testdb
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+  liquibase:
+    change-log: classpath:/db/changelog/master.yaml
+
+  mail:
+    host: smtp.gmail.com
+    username: devargenpm@gmail.com
+    password: vcfs pusq zeeo ncuq
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: trued
+          starttls.enable: true
+  data:
+    redis:
+      host: redis-cache
+      port: 6379
+
+server:
+  port: 8888
+
+
+url:
+  objects: https://api.restful-api.dev/objects
